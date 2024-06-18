@@ -1,0 +1,343 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffcc00;
+    padding: 10px 20px;
+    position: relative;
+    
+}
+
+/* CSS for header icons alignment */
+header
+
+#logo {
+    height: 50px;
+    cursor: pointer;
+    margin-left: 30%; /* Set margin to position the logo */
+
+
+}
+
+
+
+/* CSS for menu header */
+.menu-header {
+    margin-left: 350px; /* Adjust left margin as needed */
+}
+
+.custom-height {
+    height: 200px;
+    width: auto;
+}
+
+/* CSS for banner */
+.banner {
+    width: 100%;
+    height: 745px; /* Ensure this height matches your desired height */
+    position: relative;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.add-to-cart {
+    background-color: #FFCB05;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.add-to-cart:hover {
+    background-color: #FFA500;
+}
+
+.menu-categories{
+    margin-left: 20%;
+
+}
+
+
+.category-button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #28a745; /* Green color */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   
+
+
+}
+
+
+
+#banner-pls{
+
+    height: 745px;
+    width: 100%;
+}
+
+/* CSS for main content */
+#main-content {
+    overflow-y: auto; /* Add vertical scrollbar when content overflows */
+    max-height: calc(100vh - 100px); /* Adjust max height as needed */
+}
+
+
+
+
+
+/* Style for primary button (Sign Up) */
+.button-primary {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #007bff; /* Blue color */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 1%; /* Set margin to position the logo */
+
+}
+
+/* Hover and focus effects */
+.button-primary:hover,
+.button-primary:focus {
+    background-color: #0056b3; /* Darker blue color */
+}
+
+/* Style for secondary button (Login) */
+.button-secondary {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #28a745; /* Green color */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10%; /* Set margin to position the logo */
+}
+
+/* Hover and focus effects */
+.button-secondary:hover,
+.button-secondary:focus {
+    background-color: #218838; /* Darker green color */
+}
+
+
+#login-text{
+    margin-left: 40%;
+
+}
+
+#signup-text{
+    margin-left: 40%;
+
+
+}
+
+#search-bar {
+    padding: 10px;
+    border-radius: 20px; /* Adjust the border-radius value to change the roundness */
+    border: 2px solid #ddd; /* Border color */
+    font-size: 16px;
+    outline: none; /* Remove outline when focused */
+    transition: border-color 0.3s ease; /* Smooth transition for border color change */
+    width: 300px; /* Adjust width as needed */
+    margin-left: 10%;
+}
+
+/* Style for hover and focus effects */
+#search-bar:hover,
+#search-bar:focus {
+    border-color: #aaa; /* Border color when hovered or focused */
+}
+
+#cart-button {
+    background-color: #e4002b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 5%; /* Push the cart button to the right */
+    margin-right: 5%; /* Set margin to position the cart button */
+    border-radius: 10px;
+}
+
+#signup-button {
+    margin-right: 10%; /* Set margin to position the sign-up button */
+}
+
+#cart-dropdown {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 300px;
+    border: 1px solid #ddd;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+#cart-dropdown #cart-items {
+    padding: 10px;
+}
+
+#cart-dropdown #cart-total {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    text-align: right;
+    font-weight: bold;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    display: none; /* Initial hidden state */
+}
+
+.menu-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+   
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+.item-info {
+    padding: 15px;
+}
+
+.item-info h2 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.item-info p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.add-to-cart {
+    background-color: #e4002b;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-content ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.footer-content ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-content ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Footer styling */
+footer {
+    flex-shrink: 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    height: 100px;
+
+}
+
+

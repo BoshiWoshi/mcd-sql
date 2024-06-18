@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - McDonald's</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+
+    <style>
+         /* CSS for rounded search bar */
+         #search-bar {
+            padding: 10px;
+            border-radius: 20px; /* Adjust the border-radius value to change the roundness */
+            border: 2px solid #ddd; /* Border color */
+            font-size: 16px;
+            outline: none; /* Remove outline when focused */
+            transition: border-color 0.3s ease; /* Smooth transition for border color change */
+            width: 300px; /* Adjust width as needed */
+        }
+
+        /* Style for hover and focus effects */
+        #search-bar:hover,
+        #search-bar:focus {
+            border-color: #aaa; /* Border color when hovered or focused */
+        }
+
+        #cart-button {
+            padding: 10px 20px; /* Adjust padding for button size */
+            border-radius: 20px; /* Adjust the border-radius value to change the roundness */
+            border: none; /* Remove default button border */
+            background-color: #d50000; /* Button background color */
+            color: #333; /* Button text color */
+            font-size: 16px;
+            cursor: pointer; /* Show pointer cursor on hover */
+            transition: background-color 0.3s ease; /* Smooth transition for background color change */
+            outline: none; /* Remove outline when focused */
+        }
+
+        /* Style for hover and focus effects */
+        #cart-button:hover,
+        #cart-button:focus {
+            background-color: #ffd633; /* Button background color when hovered or focused */
+        }
+        /* Additional CSS for centering content */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+
+        main {
+            flex: 1; /* Take remaining vertical space */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .privacy-policy-content {
+            text-align: center;
+            max-width: 800px;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-content p {
+            margin: 0;
+        }
+
+        .footer-content ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-content ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .footer-content ul li:last-child {
+            margin-right: 0;
+        }
+
+        .footer-content ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="McDonald's Logo" id="logo">
+        <input type="text" id="search-bar" placeholder="Search...">
+        <button id="cart-button">Cart (<span id="cart-count">0</span>)</button>
+        <div id="cart-dropdown" class="cart-dropdown">
+            <div id="cart-items"></div>
+            <div id="cart-total"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="privacy-policy-content">
+            <h1>Privacy Policy</h1>
+            <p>Your privacy is important to us. It is McDonald's policy to respect your privacy regarding any information we may collect from you across our website, [Your Website URL], and other sites we own and operate.</p>
+
+            <!-- Include the rest of your privacy policy content here -->
+
+            <p>For more details on our privacy practices, please review our full <a href="privacy-policy.html">Privacy Policy</a>.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 McDonald's. All rights reserved.</p>
+            <ul>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="terms-of-service.html">Terms of Service</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
